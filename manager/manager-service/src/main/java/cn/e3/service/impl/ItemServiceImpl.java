@@ -22,12 +22,6 @@ public class ItemServiceImpl implements ItemService {
 	private TbItemMapper itemMapper;
 
 	@Override
-	public TbItem geTbItemById(Long id) {
-		TbItem tbItem = itemMapper.selectByPrimaryKey(id);
-		return tbItem;
-	}
-
-	@Override
 	public EasyUIResult getItemList(int page, int rows) {
 		// 设置分页信息
 		PageHelper.startPage(page, rows);
