@@ -9,11 +9,6 @@
 	<artifactId>manager-web</artifactId>
 	<packaging>war</packaging>
 	<dependencies>
-		<dependency>
-			<groupId>cn.e3mall</groupId>
-			<artifactId>e3-manager-interface</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -85,6 +80,13 @@
 		<dependency>
 			<groupId>com.github.sgroschupf</groupId>
 			<artifactId>zkclient</artifactId>
+		</dependency>
+
+		<!-- 导入interface -->
+		<dependency>
+			<groupId>cn.e3Item</groupId>
+			<artifactId>manager-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>
