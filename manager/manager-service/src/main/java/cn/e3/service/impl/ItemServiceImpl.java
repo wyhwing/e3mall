@@ -31,7 +31,9 @@ public class ItemServiceImpl implements ItemService {
 		// 取分页信息
 		PageInfo<TbItem> info = new PageInfo<>(list);
 		// 创建返回结果对象
-		EasyUIResult result = new EasyUIResult(info.getTotal(), list);
+		EasyUIResult result = new EasyUIResult();
+		result.setTotal(info.getTotal());
+		result.setRows(list);
 		return result;
 	}
 
